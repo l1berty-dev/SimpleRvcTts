@@ -8,6 +8,8 @@ cd SimpleRvcTts
 curl -L -O https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/hubert_base.pt
 curl -L -O https://huggingface.co/lj1995/VoiceConversionWebUI/resolve/main/rmvpe.pt
 
+cd ..
+
 # Make virtual environment
 python -m venv venv
 # Activate venv (for Windows)
