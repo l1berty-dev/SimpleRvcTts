@@ -18,6 +18,8 @@ venv\Scripts\activate
 # Install PyTorch manually if you want to use NVIDIA GPU (Windows)
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
+cd SimpleRvcTts
+
 # Install requirements
 pip install -r requirements.txt
 ```
