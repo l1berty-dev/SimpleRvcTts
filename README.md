@@ -23,3 +23,8 @@ cd SimpleRvcTts
 # Install requirements
 pip install -r requirements.txt
 ```
+## Sources
+The module was written using the following repositories
+
+https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
+https://github.com/litagin02/rvc-tts-webui
