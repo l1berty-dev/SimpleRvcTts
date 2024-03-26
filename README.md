@@ -23,6 +23,29 @@ cd SimpleRvcTts
 # Install requirements
 pip install -r requirements.txt
 ```
+## Tree
+```
+├── SimpleRvcTts #a ready-made module, I do not recommend changing the code
+├── weights #folder with models
+│   ├── model1
+│   │   ├── my_model1.pth
+│   │   └── my_index_file_for_model1.index
+│   └── model2
+│       ├── my_model2.pth
+│       └── my_index_file_for_model2.index
+└── main.py #this is your file where you can write code
+...
+```
+## Example
+```python
+from SimpleRvcTts.tts import TTS
+
+voice = TTS('new_myvoice', 'weights', 10, 'ru-RU-DmitryNeural-Male', 0.0, 'rmvpe', 1, 1)
+info, data = voice.get('Это тестовый текст для проверки голоса')
+voice.play(data) #playback of the final audio
+voice.save(data, 'voice.wav') #saving a file by the specified path and name
+```
+
 ## Sources
 The module was written using the following repositories
 
